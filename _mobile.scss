@@ -1,0 +1,198 @@
+@media (max-width: 767px) {
+    .center {
+    padding-left: 16px;
+    padding-right: 16px;
+    }
+    .top {
+        padding-top: 32px;
+        background-image: url(images/mobile/top-bg.jpg);
+        &-ctlg {
+            background-image: url(images/mobile/top-ctlg.jpg);
+        }
+        &-cart {
+            background-image: url(images/mobile/top-crt.jpg);
+        }
+    }
+    .header {
+        
+        border-bottom: none;
+        &__input {display: none;
+        }
+        nav {
+            display: none;
+        }
+        &-mob {
+            display: flex;gap: 32px;
+        }
+
+    }
+    .logo {
+        width: 99px;
+    }
+    .tags {
+        margin-top: 29px;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .heading {
+        font-size: 48px;
+        &_ctlg {
+            margin-top: 82px;
+            text-align: center;
+        }
+               
+    }
+    .tocatalog_white {
+        font-size: 14px;
+    }
+    .ctlg {
+        &__heading {   
+            font-size: 24px;
+            margin-top: 32px;
+        }
+        &__name {
+            font-size: 18px;
+        }
+        &__price {
+            font-size: 18px;
+        }
+    }
+
+    .contain {
+        flex-direction: column;
+        gap: 36px;
+    }
+    .product {
+        
+        max-width: 343px;
+    }
+
+    .for {
+        gap: 16px;
+        &__product {
+            height: 375px;
+            font-size: 28px;
+            grid-column: 1 / -1;
+            &_first {
+                height: 244px;
+            }
+            &_1 {
+                background-image: url(images/mobile/for1.jpg);
+            }
+            
+            &_2 {
+                background-image: url(images/mobile/for2.jpg);
+            }
+            
+            &_3 {
+                background-image: url(images/mobile/for3.jpg);
+            }
+            
+            &_4 {
+                background-image: url(images/mobile/for4.jpg);
+            }
+            
+            &_5 {
+                background-image: url(images/mobile/for5.jpg);
+            }
+        }
+
+    }
+    .footer {
+        margin-top: 32px;
+        padding-bottom: 32px;
+        
+        justify-content: space-around;
+
+        &__menu {
+            padding-bottom: 70px;
+        }
+        &__contacts {
+            padding-bottom: 69px;
+        }
+        
+    }
+    
+    // CATALOG!!!
+
+    .interection {
+        margin-top: 32px;
+        margin-bottom: 32px;
+        flex-direction: column;
+        gap: 14px;
+        &__window {
+            flex-direction: column-reverse;
+
+        }
+    }
+    .filtering {
+        font-size: 14px;
+    }
+    .links-box__item {
+        font-size: 14px;
+    }
+    .fltr-box {
+        left: 0;
+        top: 106px;
+        max-width: 286px;
+    }
+    .fltr {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        
+        &__btn {
+            align-self: center;
+        }
+    }
+    // КОРЗИНА!!
+
+    .crt {
+        margin-top: 92px;
+        
+        
+
+        &__top {
+            display: none;
+        }
+        &__item {
+            padding-top: 18px;
+            margin-bottom: 24px;
+        }
+        &__left {
+            display: block;
+        }
+        &__img {
+            display: none;
+        }
+        &__info {
+            width: 253px;
+            height: 149px;
+        }
+        &__name {
+            font-size: 18px;
+            font-weight: 500;
+        }
+        &__description {
+            font-size: 12px;
+        }
+        &__price {
+            font-size: 14px;
+            font-weight: 500;
+        }
+        &__btn-box {
+            margin-top: 8px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &__btn {
+            font-size: 12px;
+        }
+        &__form {
+            margin-top: 48px;
+            max-width: 343px;    
+        }
+    }
+}
+        

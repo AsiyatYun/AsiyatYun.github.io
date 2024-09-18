@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top center">
+        <header class="header">
+            <a href="index.html">
+                <img class="logo" src="images/logo.svg" alt="Логотип" id="logo">
+            </a>            
+            <input class="header__input" type="text" placeholder="Поиск" >
+            <nav>
+                <ul class="header__list">
+                    <li><a class="header__link" href="catalog.html">Каталог</a></li>
+                    <li class="cart-link">
+                        <details class="header__link cart-link__act">
+                            <summary>Корзина</summary>
+                            <div class="cart-box">
+                                
+                                    <div class="crt__item crt__item_1 crt__item_index">
+                                        <div class="crt__left">       
+                                            <img class="crt__img" src="images/crt1.jpg" alt="Фото товара">
+                                            <div class="crt__info">
+                                                <h4 class="crt__name">Стол MENU</h4>
+                                                <p class="crt__description">Для того чтобы трапезничать было приятно, необходим правильный обеденный стол.</p>
+                                                <p class="crt__price">34 000 руб.</p>
+                                                <div class="crt__link-box">
+                                                    <a class="tocatalog crt__link" href="#">Избранные</a>
+                                                    <a class="tocatalog crt__link" href="#">Удалить</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input class="crt__nmbr" type="number" min="1" value="1">
+                                    </div>
+                                    <div class="crt__item crt__item_2">
+                                        <div class="crt__left">
+                                            <img class="crt__img" src="images/crt2.jpg" alt="Фото товара">
+                                            <div class="crt__info">
+                                                <h4 class="crt__name">Диван NASTAN</h4>
+                                                <p class="crt__description">Модель отличается простотой линий и форм, отсутствием броского декора.</p>
+                                                <p class="crt__price">80 000 руб.</p>
+                                                <div class="crt__link-box">
+                                                    <a class="tocatalog tocatalog__black crt__link" href="#">Избранные</a>
+                                                    <a class="tocatalog tocatalog__black crt__link" href="#">Удалить</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input class="crt__nmbr" type="number" min="1" value="1">
+                                    </div>          
+                                    <div class="crt__btn-box">
+                                    <button class="buttons crt__btn crt__btn_1">Очистить корзину</button>
+                                    <button class="buttons crt__btn crt__btn_2">Продолжить покупки</button>
+                                    </div>
+                                
+                            </div> 
+                        </details>
+                        
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-mob">
+                <a href="#"><img src="images/mob-icon.svg" alt=""></a>
+                <a href="catalog.html"><img src="images/mob-icon2.svg" alt=""></a>
+                <a href="cart.html"><img src="images/mob-icon3.svg" alt=""></a>
+            </div>
+        </header>
+        <section class="tags">
+            <h1 class="heading">Всё, чего заслуживает ваш дом</h1>
+            <p class="top__tagline">Наша мебель - ваше отражение</p>
+            <a class="tocatalog tocatalog_white" href="catalog.html">Перейти в каталог</a>
+        </section>
+    </div>
+
+    <section class="center">
+        <h2 class="ctlg__heading">Мебель для ...</h2>
+        <div class="for">
+            <div class="for__product for__product_1 for__product_first">ОТДЫХА</div>
+            <div class="for__product for__product_2 for__product_first">РАБОТЫ</div>
+            <div class="for__product for__product_3">КУХНИ</div>
+            <div class="for__product for__product_4">ДЕТСКОЙ</div>
+            <div class="for__product for__product_5">ВАННОЙ</div>
+        </div>
+    </section>
+
+    <section  class="ctlg__index center">
+        <h2 class="ctlg__heading">Специальные предложения</h2>
+        <div class="contain">
+             <article class="product">
+                <div class="ctlg__hover">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="images/mobile/special1.jpg">
+                        <source media="(min-width: 768px)" srcset="images/special1.jpg">
+                        <img class="ctlg__img" src="images/special1.jpg" alt="фото товара люстра">
+                    </picture>                     
+                    <div class="icon-box">
+                        <img src="images/basket.svg" alt="иконка корзины"> 
+                        <img class="icon-box__heart" src="images/heart.svg" alt="иконка избранное">  
+                    </div>
+                </div>                
+                <h3 class="ctlg__name">Люстра VODA</h3>
+                <p class="ctlg__description">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
+                <div class="ctlg__price-box">
+                    <span class="ctlg__price">45 000 руб.</span>
+                    <span class="ctlg__price ctlg__price_old">67 000 руб</span>
+                </div>
+             </article>   
+             
+             <article class="product">
+                <div class="ctlg__hover">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="images/mobile/special2.jpg">
+                        <source media="(min-width: 768px)" srcset="images/special2.jpg">
+                        <img class="ctlg__img" src="images/special2.jpg" alt="фото товара диван">
+                    </picture>
+                     
+                    <div class="icon-box">
+                        <img src="images/basket.svg" alt="иконка корзины"> 
+                        <img class="icon-box__heart" src="images/heart.svg" alt="иконка избранное">  
+                    </div>
+                </div>
+                
+                <h3 class="ctlg__name">Диван RONALD</h3>
+                <p class="ctlg__description">Модель отличается простотой линий и форм, отсутствием броского декора.</p>
+                <div class="ctlg__price-box">
+                    <span class="ctlg__price">156 000 руб.</span>
+                    <span class="ctlg__price ctlg__price_old">198 000 руб.</span>
+                </div>
+               
+             </article> 
+
+             <article class="product">
+                <div class="ctlg__hover">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="images/mobile/special3.jpg">
+                        <source media="(min-width: 768px)" srcset="images/special3.jpg">
+                        <img class="ctlg__img" src="images/special3.jpg" alt="фото товара комод">
+                    </picture>
+                    <div class="icon-box">
+                        <img src="images/basket.svg" alt="иконка корзины"> 
+                        <img class="icon-box__heart" src="images/heart.svg" alt="иконка избранное">  
+                    </div>
+                </div>                
+                <h3 class="ctlg__name">Комод VENT</h3>
+                <p class="ctlg__description">Европейский дуб - отличается особой прочностью и стабильностью.</p>
+                <div class="ctlg__price-box">
+                    <span class="ctlg__price">34 000 руб.</span>
+                    <span class="ctlg__price ctlg__price_old">45 000 руб.</span>
+                </div>
+                
+             </article> 
+        </div>
+    </section>
+
+    <section class="center">
+        <h2 class="ctlg__heading">Каталог товаров</h2>
+        <div class="contain">
+            <article class="product">
+                <div class="ctlg__hover">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="images/mobile/product1.jpg">
+                        <source media="(min-width: 768px)" srcset="images/product1.jpg">
+                        <img class="ctlg__img" src="images/product1.jpg" alt="фото товара кровать">
+                    </picture>
+                     
+                    <div class="icon-box">
+                        <img src="images/basket.svg" alt="иконка корзины"> 
+                        <img class="icon-box__heart" src="images/heart.svg" alt="иконка избранное">  
+                    </div>
+                </div>                
+                <h3 class="ctlg__name">Кровать TATRAN</h3>
+                <p class="ctlg__description">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
+                <p class="ctlg__price">120 000 руб.</p>
+             </article> 
+
+             <article class="product">
+                <div class="ctlg__hover">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="images/mobile/product2.jpg">
+                        <source media="(min-width: 768px)" srcset="images/product2.jpg">
+                        <img class="ctlg__img" src="images/product2.jpg" alt="фото товара кресло">
+                    </picture>
+                    <div class="icon-box">
+                        <img src="images/basket.svg" alt="иконка корзины"> 
+                        <img class="icon-box__heart" src="images/heart.svg" alt="иконка избранное">  
+                    </div>
+                </div>
+                                <h3 class="ctlg__name">Кресло VILORA</h3>
+                <p class="ctlg__description">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань. </p>
+                <p class="ctlg__price">21 000 руб.</p>
+             </article> 
+
+             <article class="product">
+                <div class="ctlg__hover">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="images/mobile/product3.jpg">
+                        <source media="(min-width: 768px)" srcset="images/product3.jpg">
+                        <img class="ctlg__img" src="images/product3.jpg" alt="фото товара стол">
+                    </picture>
+                    <div class="icon-box">
+                        <img src="images/basket.svg" alt="иконка корзины"> 
+                        <img class="icon-box__heart" src="images/heart.svg" alt="иконка избранное">  
+                    </div>
+                </div>                
+                <h3 class="ctlg__name">Стол MENU</h3>
+                <p class="ctlg__description">Для того чтобы трапезничать было приятно, необходим правильный обеденный стол.</p>
+                <p class="ctlg__price">34 000 руб.</p>
+             </article> 
+
+             <article class="product">
+                <div class="ctlg__hover">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="images/mobile/product4.jpg">
+                        <source media="(min-width: 768px)" srcset="images/product4.jpg">
+                        <img class="ctlg__img" src="images/product4.jpg" alt="фото товара кресло">
+                    </picture>
+                    <div class="icon-box">
+                        <img src="images/basket.svg" alt="иконка корзины"> 
+                        <img class="icon-box__heart" src="images/heart.svg" alt="иконка избранное">  
+                    </div>
+                </div>                
+                <h3 class="ctlg__name">Кресло ASKESTA</h3>
+                <p class="ctlg__description">Высокоэластичный пенополиуретан в «начинке» кресла надежен и долговечен</p>
+                <p class="ctlg__price">68 000 руб.</p>
+             </article> 
+
+             <article class="product">
+                <div class="ctlg__hover">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="images/mobile/product5.jpg">
+                        <source media="(min-width: 768px)" srcset="images/product5.jpg">
+                        <img class="ctlg__img" src="images/product5.jpg" alt="фото товара стол">
+                    </picture>
+                    <div class="icon-box">
+                        <img src="images/basket.svg" alt="иконка корзины"> 
+                        <img class="icon-box__heart" src="images/heart.svg" alt="иконка избранное">  
+                    </div>
+                </div>                
+                <h3 class="ctlg__name">Стол NORMAN</h3>
+                <p class="ctlg__description">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки</p>
+                <p class="ctlg__price">40 000 руб.</p>
+             </article> 
+
+             <article class="product">
+                <div class="ctlg__hover">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="images/mobile/product6.jpg">
+                        <source media="(min-width: 768px)" srcset="images/product6.jpg">
+                        <img class="ctlg__img" src="images/product6.jpg" alt="фото товара диван">
+                    </picture>
+                    <div class="icon-box">
+                        <img src="images/basket.svg" alt="иконка корзины"> 
+                        <img class="icon-box__heart" src="images/heart.svg" alt="иконка избранное">  
+                    </div>
+                </div>                
+                <h3 class="ctlg__name">Диван NASTAN</h3>
+                <p class="ctlg__description">Модель отличается простотой линий и форм, отсутствием броского декора. </p>
+                <p class="ctlg__price">80 000 руб.</p>
+             </article> 
+        </div>      
+    </section>
+    <p class="tocatalog__link center">
+        <a class="tocatalog" href="catalog.html">Перейти в каталог</a>
+    </p>
+
+    
+
+    <footer class="footer center">
+        <img src="images/logo-footer.svg" alt="Логотип" class="logo footer__logo">
+
+        <div class="footer__menu">
+            <h4 class="footer__heading">Меню</h4>            
+            <a class="footer__link" href="#logo">Главная</a>
+            <a class="footer__link" href="catalog.html">Каталог</a>
+            <a class="footer__link" href="cart.html">Корзина</a>
+            
+        </div>
+        <div class="footer__contacts">
+            <h4 class="footer__heading">Контакты</h4>
+            <a class="footer__link" href="tel:+79088008080">+7 908 800 80 80</a>
+            <a class="footer__link" href="mailto:help@interier.com">help@interier.com</a>
+            <p class="icons">
+                <a class="icon" href="#"><img src="images/vk.svg" alt="вконтакте"></a>
+                <a class="icon" href="#"><img src="images/telegram.svg" alt="телеграм"></a>
+                <a class="icon" href="#"><img src="images/dzen.svg" alt="дзен"></a>
+            </p>
+            
+        </div>
+        <form class="subscribe">
+            <p class="footer__sub">Получайте наши новости и обновления</p>
+            <input class="footer__input" type="email" placeholder="Ваш e-mail">
+            <button class="button buttons" type="submit">Подписаться</button>
+        </form>
+    </footer>
+
+
+
+
+</body>
+
+</html>

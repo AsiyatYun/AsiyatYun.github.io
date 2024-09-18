@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top top-ctlg center">
+        <header class="header">
+            <a href="index.html"><img class="logo" src="images/logo.svg" alt="Логотип" id="logo"></a>
+            
+            <input class="header__input" type="text" placeholder="Поиск" >
+            <nav>
+                <ul class="header__list">
+                    <li><a class="header__link" href="catalog.html">Каталог</a></li>
+                    <li><a class="header__link" href="cart.html">Корзина</a></li>
+                </ul>
+            </nav>
+            <div class="header-mob">
+                <a href="#"><img src="images/mob-icon.svg" alt=""></a>
+                <a href="catalog.html"><img src="images/mob-icon2.svg" alt=""></a>
+                <a href="cart.html"><img src="images/mob-icon3.svg" alt=""></a>
+            </div>
+        </header>
+        <section>
+            <h1 class="heading heading_ctlg">Каталог</h1>            
+        </section>
+    </div>
+    <section class="interection center">
+        <nav class="links-box">
+            <a href="index.html" class="links-box__item">Главная</a>
+            /
+            <a href="#logo" class="links-box__item">Каталог товаров</a>            
+        </nav>
+        <div class="interection__window">
+            
+            <form class="fltr-box" action="#" method="get">
+                <section class="fltr">
+                    <fieldset class="fltr__item fltr__time">
+                        <legend class="fltr__heading">Сроки доставки</legend>
+                        <div class="fltr__radio">
+                            <input type="radio"  name="delivery" id="nomatter" checked><label for="nomatter" class="fltr__text">Неважно
+                            </label>
+                        </div>
+                        <div class="fltr__radio">
+                            <input type="radio"  name="delivery" id="today"><label for="today" class="fltr__text">Сегодня
+                            </label>
+                        </div>
+                        <div class="fltr__radio">
+                            <input type="radio"  name="delivery" id="tomorrow"><label for="tomorrow" class="fltr__text">Завтра
+                            </label>
+                        </div>
+                        <div class="fltr__radio">
+                            <input type="radio" name="delivery" id="threedays"><label for="threedays" class="fltr__text">До 3 дней</label>
+                        </div>
+                        <div class="fltr__radio">
+                            <input type="radio" name="delivery" id="sevendays"><label for="sevendays" class="fltr__text">До 7 дней</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fltr__item fltr__price">
+                        <legend class="fltr__heading">Цена</legend>
+                        <div class="range">
+                            <label class="range__label" for="range__input">от 0 руб. до 100000 руб.</label>                
+                            <div class="range__slider">
+                                <input type="range" class="range__input range__input_min" min="1" max="100000" value="1" step="100" name="range">
+                                <input type="range" class="range__input range__input_max" min="1" max="100000" value="100000" step="100" name="range">
+                            </div>
+                        </div>   
+                    </fieldset>
+                    <fieldset class="fltr__item fltr__palette">
+                        <legend class="fltr__heading">Цвет</legend>
+                        <div class="palette"> 
+                            <div class="box box_1">
+                                <input type="checkbox" name="color" id="white"><label for="white"></label>
+                            </div>
+                            <div class="box box_2">
+                                <input type="checkbox" name="color" id="black"><label for="black"></label>
+                            </div>
+                            <div class="box box_3">
+                                <input type="checkbox" name="color" id="grey"><label for="grey"></label>
+                            </div>
+                            <div class="box box_4">
+                                <input type="checkbox" name="color" id="red"><label for="red"></label>
+                            </div>
+                            <div class="box box_5">
+                                <input type="checkbox" name="color" id="orange"><label for="orange"></label>
+                            </div>
+                            <div class="box box_6">
+                                <input type="checkbox" name="color" id="yellow"><label for="yellow"></label>
+                            </div>
+                            <div class="box box_7">
+                                <input type="checkbox" name="color" id="lightgreen"><label for="lightgreen"></label>
+                            </div>
+                            <div class="box box_8">
+                                <input type="checkbox" name="color" id="green"><label for="green"></label>
+                            </div>
+                            <div class="box box_9">
+                                <input type="checkbox" name="color" id="blue"><label for="blue"></label>
+                            </div>
+                            <div class="box box_10">
+                                <input type="checkbox" name="color" id="darkblue"><label for="darkblue"></label>
+                            </div>
+                            <div class="box box_11">
+                                <input type="checkbox" name="color" id="navy"><label for="navy"></label>
+                            </div>
+                            <div class="box box_12">
+                                <input type="checkbox" name="color" id="purple"><label for="purple"></label>
+                            </div>
+                            <div class="box box_13">
+                                <input type="checkbox" name="color" id="violet"><label for="violet"></label>
+                            </div>
+                            <div class="box box_14">
+                                <input type="checkbox" name="color" id="pink"><label for="pink"></label>
+                            </div>
+                        </div>    
+                    </fieldset>
+                    <fieldset class="fltr__item fltr__room">
+                        <legend class="fltr__heading">Тип комнаты</legend>
+                        <div class="fltr__roomtype">
+                            <input type="checkbox" name="roomtype" id="kitchen"><label for="kitchen" class="fltr__text">Кухня и столовая</label>
+                        </div>
+                        <div class="fltr__roomtype">
+                            <input type="checkbox" name="roomtype" id="bathroom"><label for="bathroom" class="fltr__text">Ванная комната</label>
+                        </div>
+                        <div class="fltr__roomtype">
+                            <input type="checkbox" name="roomtype" id="children"><label for="children" class="fltr__text">Детская комната</label>
+                        </div>
+                        <div class="fltr__roomtype">
+                            <input type="checkbox" name="roomtype" id="office"><label for="office" class="fltr__text">Домашний офис</label>
+                        </div>
+                        <div class="fltr__roomtype">
+                            <input type="checkbox" name="roomtype" id="livingroom"><label for="livingroom" class="fltr__text">Гостиная</label>
+                        </div>
+                        <div class="fltr__roomtype">
+                            <input type="checkbox" name="roomtype" id="hallway"><label for="hallway" class="fltr__text">Прихожая</label>
+                        </div>
+                        <div class="fltr__roomtype">
+                            <input type="checkbox" name="roomtype" id="bedroom"><label for="bedroom" class="fltr__text">Спальня</label>
+                        </div>
+                        <div class="fltr__roomtype">
+                            <input type="checkbox" name="roomtype" id="wardrobe"><label for="wardrobe" class="fltr__text">Гардероб</label>
+                        </div>
+                        <div class="fltr__roomtype">
+                            <input type="checkbox" name="roomtype" id="house"><label for="house" class="fltr__text">Дача</label>
+                        </div>
+                        <div class="fltr__roomtype">
+                            <input type="checkbox" name="roomtype" id="light"><label for="light" class="fltr__text">Свет</label>
+                        </div>
+                        
+                    </fieldset>
+                    <div class="fltr__btn">
+                        <button class="btn buttons" type="submit">Применить</button>
+                    </div>
+                </section>
+            </form>
+            <button class="filtering filtering_f">Фильтрация</button> 
+                            
+            <select class="filtering filtering_order" name="Фильтрация" id="#">
+                <option value="По популярности">По популярности</option>
+                <option value="Сперва новые">
+                    Сперва новые
+                </option>
+            </select>
+        </div>      
+    </section>
+  
+
+
+    <div class="container center">
+        <article class="product ctlg">
+            <div class="ctlg__hover">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/mobile/ctlg1.jpg">
+                    <source media="(min-width: 768px)" srcset="images/ctlg1.jpg">
+                    <img class="ctlg__img" src="images/ctlg1.jpg" alt="фото товара">
+                </picture>
+                <div class="icon-box">
+                    <img src="images/basket.svg" alt="иконка корзины"> 
+                    <img class="icon-box__heart" src="images/heart.svg" alt="иконка избранное">  
+                </div>
+            </div>
+            <h3 class="ctlg__name">Кровать TATRAN</h3>
+            <p class="ctlg__description">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
+            <p class="ctlg__price">120 000 руб.</p>
+        </article>
+        <article class="product ctlg">
+            <div class="ctlg__hover">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/mobile/ctlg2.jpg">
+                    <source media="(min-width: 768px)" srcset="images/ctlg2.jpg">
+                    <img class="ctlg__img" src="images/ctlg2.jpg" alt="фото товара">
+                </picture>
+                <div class="icon-box">
+                    <img src="images/basket.svg" alt="иконка корзины"> 
+                    <img class="icon-box__heart" src="images/heart.svg" alt="иконка избранное">  
+                </div>
+            </div>    
+            <h3 class="ctlg__name">Кресло VILORA</h3>
+            <p class="ctlg__description">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань.</p>
+            <p class="ctlg__price">21 000 руб.</p>
+        </article>
+        <article class="product ctlg">
+            <div class="ctlg__hover">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/mobile/ctlg3.jpg">
+                    <source media="(min-width: 768px)" srcset="images/ctlg3.jpg">
+                    <img class="ctlg__img" src="images/ctlg3.jpg" alt="фото товара">
+                </picture>
+                <div class="icon-box">
+                    <img src="images/basket.svg" alt="иконка корзины"> 
+                    <img class="icon-box__heart" src="images/heart.svg" alt="иконка избранное">  
+                </div>
+            </div>    
+            <h3 class="ctlg__name">Стол MENU</h3>
+            <p class="ctlg__description">Европейский дуб - отличается особой прочностью и стабильностью.</p>
+            <p class="ctlg__price">34 000 руб.</p>
+        </article>
+        <article class="product ctlg">
+            <div class="ctlg__hover">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/mobile/ctlg4.jpg">
+                    <source media="(min-width: 768px)" srcset="images/ctlg4.jpg">
+                    <img class="ctlg__img" src="images/ctlg4.jpg" alt="фото товара">
+                </picture>                 
+                <div class="icon-box">
+                    <img src="images/basket.svg" alt="иконка корзины"> 
+                    <img class="icon-box__heart" src="images/heart.svg" alt="иконка избранное">  
+                </div>
+            </div>    
+            <h3 class="ctlg__name">Диван ASKESTA</h3>
+            <p class="ctlg__description">Благодаря защелкивающемуся механизму диван легко раскладывается в комфортную кровать</p>
+            <p class="ctlg__price">68 000 руб.</p>
+        </article>
+        <article class="product ctlg">
+            <div class="ctlg__hover">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/mobile/ctlg5.jpg">
+                    <source media="(min-width: 768px)" srcset="images/ctlg5.jpg">
+                    <img class="ctlg__img" src="images/ctlg5.jpg" alt="фото товара">
+                </picture>
+                <div class="icon-box">
+                    <img src="images/basket.svg" alt="иконка корзины"> 
+                    <img class="icon-box__heart" src="images/heart.svg" alt="иконка избранное">  
+                </div>
+            </div>    
+            <h3 class="ctlg__name">Кресло LUNAR</h3>
+            <p class="ctlg__description">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки</p>
+            <p class="ctlg__price">40 000 руб.</p>
+        </article>
+        <article class="product ctlg">
+            <div class="ctlg__hover">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/mobile/ctlg6.jpg">
+                    <source media="(min-width: 768px)" srcset="images/ctlg6.jpg">
+                    <img class="ctlg__img" src="images/ctlg6.jpg" alt="фото товара">
+                </picture>
+                <div class="icon-box">
+                    <img src="images/basket.svg" alt="иконка корзины"> 
+                    <img class="icon-box__heart" src="images/heart.svg" alt="иконка избранное">  
+                </div>
+            </div>    
+            <h3 class="ctlg__name">Шкаф Nastan</h3>
+            <p class="ctlg__description">Мебель может быть оснащена разнообразными системами подсветки.</p>
+            <p class="ctlg__price">80 000 руб.</p>
+        </article>
+        <article class="product ctlg">
+            <div class="ctlg__hover">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/mobile/ctlg1.jpg">
+                    <source media="(min-width: 768px)" srcset="images/ctlg1.jpg">
+                    <img class="ctlg__img" src="images/ctlg1.jpg" alt="фото товара">
+                </picture>
+                <div class="icon-box">
+                    <img src="images/basket.svg" alt="иконка корзины"> 
+                    <img class="icon-box__heart" src="images/heart.svg" alt="иконка избранное">  
+                </div>
+            </div>
+            <h3 class="ctlg__name">Кровать TATRAN</h3>
+            <p class="ctlg__description">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
+            <p class="ctlg__price">120 000 руб.</p>
+        </article>
+        <article class="product ctlg">
+            <div class="ctlg__hover">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/mobile/ctlg2.jpg">
+                    <source media="(min-width: 768px)" srcset="images/ctlg2.jpg">
+                    <img class="ctlg__img" src="images/ctlg2.jpg" alt="фото товара">
+                </picture>
+                <div class="icon-box">
+                    <img src="images/basket.svg" alt="иконка корзины"> 
+                    <img class="icon-box__heart" src="images/heart.svg" alt="иконка избранное">  
+                </div>
+            </div>    
+            <h3 class="ctlg__name">Кресло VILORA</h3>
+            <p class="ctlg__description">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань.</p>
+            <p class="ctlg__price">21 000 руб.</p>
+        </article>
+        <article class="product ctlg">
+            <div class="ctlg__hover">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/mobile/ctlg3.jpg">
+                    <source media="(min-width: 768px)" srcset="images/ctlg3.jpg">
+                    <img class="ctlg__img" src="images/ctlg3.jpg" alt="фото товара">
+                </picture>
+                <div class="icon-box">
+                    <img src="images/basket.svg" alt="иконка корзины"> 
+                    <img class="icon-box__heart" src="images/heart.svg" alt="иконка избранное">  
+                </div>
+            </div>    
+            <h3 class="ctlg__name">Стол MENU</h3>
+            <p class="ctlg__description">Европейский дуб - отличается особой прочностью и стабильностью.</p>
+            <p class="ctlg__price">34 000 руб.</p>
+        </article>
+        <article class="product ctlg">
+            <div class="ctlg__hover">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/mobile/ctlg4.jpg">
+                    <source media="(min-width: 768px)" srcset="images/ctlg4.jpg">
+                    <img class="ctlg__img" src="images/ctlg4.jpg" alt="фото товара">
+                </picture>                 
+                <div class="icon-box">
+                    <img src="images/basket.svg" alt="иконка корзины"> 
+                    <img class="icon-box__heart" src="images/heart.svg" alt="иконка избранное">  
+                </div>
+            </div>    
+            <h3 class="ctlg__name">Диван ASKESTA</h3>
+            <p class="ctlg__description">Благодаря защелкивающемуся механизму диван легко раскладывается в комфортную кровать</p>
+            <p class="ctlg__price">68 000 руб.</p>
+        </article>
+        <article class="product ctlg">
+            <div class="ctlg__hover">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/mobile/ctlg5.jpg">
+                    <source media="(min-width: 768px)" srcset="images/ctlg5.jpg">
+                    <img class="ctlg__img" src="images/ctlg5.jpg" alt="фото товара">
+                </picture>
+                <div class="icon-box">
+                    <img src="images/basket.svg" alt="иконка корзины"> 
+                    <img class="icon-box__heart" src="images/heart.svg" alt="иконка избранное">  
+                </div>
+            </div>    
+            <h3 class="ctlg__name">Кресло LUNAR</h3>
+            <p class="ctlg__description">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки</p>
+            <p class="ctlg__price">40 000 руб.</p>
+        </article>
+        <article class="product ctlg">
+            <div class="ctlg__hover">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/mobile/ctlg6.jpg">
+                    <source media="(min-width: 768px)" srcset="images/ctlg6.jpg">
+                    <img class="ctlg__img" src="images/ctlg6.jpg" alt="фото товара">
+                </picture>
+                <div class="icon-box">
+                    <img src="images/basket.svg" alt="иконка корзины"> 
+                    <img class="icon-box__heart" src="images/heart.svg" alt="иконка избранное">  
+                </div>
+            </div>    
+            <h3 class="ctlg__name">Шкаф Nastan</h3>
+            <p class="ctlg__description">Мебель может быть оснащена разнообразными системами подсветки.</p>
+            <p class="ctlg__price">80 000 руб.</p>
+        </article>
+        
+       
+    </div>
+
+    <div class="more center">
+        <a class="tocatalog" href="#">Показать ещё</a>
+    </div>
+
+
+    <footer class="footer center">
+        <img src="images/logo-footer.svg" alt="Логотип" class="logo footer__logo">
+
+        <div class="footer__menu">
+            <h4 class="footer__heading">Меню</h4>            
+            <a class="footer__link" href="index.html">Главная</a>
+            <a class="footer__link" href="#logo">Каталог</a>
+            <a class="footer__link" href="cart.html">Корзина</a>
+            
+        </div>
+        <div class="footer__contacts">
+            <h4 class="footer__heading">Контакты</h4>
+            <a class="footer__link" href="tel:+79088008080">+7 908 800 80 80</a>
+            <a class="footer__link" href="mailto:help@interier.com">help@interier.com</a>
+            <p class="icons">
+                <a class="icon" href="#"><img src="images/vk.svg" alt="вконтакте"></a>
+                <a class="icon" href="#"><img src="images/telegram.svg" alt="телеграм"></a>
+                <a class="icon" href="#"><img src="images/dzen.svg" alt="дзен"></a>
+            </p>
+            
+        </div>
+        <form class="subscribe">
+            <p class="footer__sub">Получайте наши новости и обновления</p>
+            <input class="footer__input" type="email" placeholder="Ваш e-mail">
+            <button class="button buttons" type="submit">Подписаться</button>
+        </form>
+    </footer>
+</body>
+
+</html>
