@@ -35,7 +35,7 @@
         flex-wrap: wrap;
         text-align: center;
     }
-    .heading {
+    .title {
         font-size: 48px;
         &_ctlg {
             margin-top: 82px;
@@ -46,26 +46,26 @@
     .tocatalog_white {
         font-size: 14px;
     }
-    .ctlg {
-        &__heading {   
-            font-size: 24px;
-            margin-top: 32px;
-        }
-        &__name {
-            font-size: 18px;
-        }
-        &__price {
-            font-size: 18px;
-        }
+
+    .heading {   
+        font-size: 24px;
+        margin-top: 32px;
     }
+
+    
 
     .contain {
         flex-direction: column;
         gap: 36px;
     }
     .product {
-        
         max-width: 343px;
+        &__name {
+            font-size: 18px;
+        }
+        &__price {
+            font-size: 18px;
+        }
     }
 
     .for {
@@ -151,8 +151,6 @@
     .crt {
         margin-top: 92px;
         
-        
-
         &__top {
             display: none;
         }
